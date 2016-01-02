@@ -1,4 +1,4 @@
-import {HomeModuleName} from './components/home/'
+import {HomeModuleName} from './components/home/home'
 import services from './services/'
 
 export default angular.module('Angular_Components', [

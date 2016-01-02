@@ -1,5 +1,5 @@
 import _module from './module'
-import {HomeTemplate} from './components/home/'
+import {HomeTemplate} from './components/home/home'
 
 
 _module.config( ($locationProvider, $stateProvider, $urlRouterProvider) => {
