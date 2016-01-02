@@ -10,11 +10,17 @@ module.exports = {
       'angular',
       'lodash',
       'angular-ui-router',
-      'angular-material'
+      'angular-material',
+      'angular-messages',
+      'angular-aria',
+      'angular-animate',
+      'angular-material-icons'
     ],
     index: ['./src/index.js'],
     styles: [
-      './src/main.scss'
+      './src/main.scss',
+      npmRoot + '/angular-material/angular-material.min.css',
+      npmRoot + '/angular-material-icons/angular-material-icons.css'
     ]
   },
 
