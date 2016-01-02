@@ -1,5 +1,4 @@
-import angular from 'angular'
-import home from './components/home/'
+import {HomeModuleName} from './components/home/'
 import services from './services/'
 
 export default angular.module('Angular_Components', [
@@ -7,5 +6,5 @@ export default angular.module('Angular_Components', [
     'ngMaterial',
     'ngMdIcons',
     services.name,
-    home.name
+    HomeModuleName
 ])

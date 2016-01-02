@@ -2,22 +2,9 @@ import angular from 'angular'
 import controller from './home.controller'
 import template from './home.template.html'
 
-const configs = {
-    name: 'home_module'
-},
+export var HomeModuleName = 'home_module'
+export var HomeTemplate = `<home></home>`
 
-_module = angular.module(configs.name, ['ui.router', 'ngMaterial', 'ngMdIcons'])
+angular.module(HomeModuleName, ['ui.router', 'ngMaterial', 'ngMdIcons'])
+    .component('home', {controller, template})
 
-_module.component('home', {controller, template})
-
-_module.config( ($stateProvider, $urlRouterProvider) => {
-
-     $stateProvider
-        .state('home', {
-          url: "/",
-          template: `<home></home>`
-        })
-
-})
-
-export default configs
