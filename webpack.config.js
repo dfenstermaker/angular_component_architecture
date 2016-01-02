@@ -18,9 +18,10 @@ module.exports = {
     ],
     index: ['./src/index.js'],
     styles: [
-      './src/main.scss',
+      npmRoot + '/normalize.css/normalize.css',
       npmRoot + '/angular-material/angular-material.min.css',
-      npmRoot + '/angular-material-icons/angular-material-icons.css'
+      npmRoot + '/angular-material-icons/angular-material-icons.css',
+      './src/main.scss'
     ]
   },
 
